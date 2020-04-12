@@ -1,0 +1,28 @@
+装饰器模式
+
+类和类的关系
+
+咖啡
+
+            //抽象组件   接口
+            Drink {cost(); info();}
+
+            //具体组件
+            coffee implements Drink {
+                 private String name = "原味咖啡";
+                 实现抽象方法
+            }
+
+            //抽象装饰类
+            abstract class Decorate implements Drink {
+                private Drink drink;
+                实现方法
+            }
+
+            //具体装饰者
+            public class Milk extends Decorate {
+                public Milk(Drink drink) {
+                    super(drink);
+                }
+                实现方法
+            }

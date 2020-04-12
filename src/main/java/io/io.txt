@@ -1,0 +1,1 @@
+1. FileInputStream 读取中文的时候，会乱码。因为read读是一个字节一个字节的读取的
