@@ -6,6 +6,27 @@
 	<artifactId>java_study</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<description>Java容易忘记的知识点学习</description>
+<!--	<build>
+		<plugins>
+			&lt;!&ndash;<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>7</source>
+					<target>7</target>
+				</configuration>
+			</plugin>&ndash;&gt;
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>8</source>
+					<target>8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>-->
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -43,6 +64,11 @@
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.12</version>
 		</dependency>
 		<!--<dependency>
 			<groupId>org.apache.poi</groupId>
