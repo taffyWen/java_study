@@ -11,6 +11,7 @@ public class HungrySingleton {
 	
 	//私有的构造函数
 	private HungrySingleton() {
+		System.out.println("HungrySingleton---构造器");
 	}
 	
 	//方法不需要同步（synchronized），调用效率高

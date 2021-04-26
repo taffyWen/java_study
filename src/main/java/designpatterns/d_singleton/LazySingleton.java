@@ -11,6 +11,7 @@ public class LazySingleton {
 	private static LazySingleton lazySingleton;
 	
 	private LazySingleton() {
+		System.out.println("LazySingleton---构造器");
 	}
 	
 	//方法要同步（避免同时调用时，因为线程被挂起，产生多个对象 ），效率低
