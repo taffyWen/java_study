@@ -1,0 +1,10 @@
+
+Young Generation 年轻代
+    Eden、两个Survivor(from、to)
+Old Generation   老年代
+Permanent Generation 永久代
+
+1.8以后去除永久代
+    Metaspace  -->本地化堆内存区域
+        优势：1. 放在堆上，空间大
+             2. Permanent 需要专门的垃圾回收，使用meataspace和JAVA Heap相同地址空间，实现无缝管里

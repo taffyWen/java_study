@@ -17,7 +17,7 @@ public class DoubleCheckSingleton {
         1. 分配内存空间
         2. 初始化对象
         3. 设置instance 指向分配嗯内存地址 ，此时，instance != null
-     即：先对doubleCheckSingleton 进行了复制，但是对象还没有真正的生成，后续使用的话，会出现空指针异常
+     即：先对doubleCheckSingleton 进行了赋值，但是对象还没有真正的生成，后续使用的话，会出现空指针异常
      可以使用 volatile
      */
     public static  DoubleCheckSingleton getInstance() {
