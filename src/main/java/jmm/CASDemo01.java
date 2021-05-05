@@ -12,12 +12,10 @@ public class CASDemo01 {
         System.out.println(integer.compareAndSet(5,201));
         System.out.println(integer.get());
 
-
-        //增加版本号
-        AtomicStampedReference stampedReference = new AtomicStampedReference(1,1);
-
         //可以把一般类转为atomic类型
         AtomicReference<Person> atomicReference = new AtomicReference<>();
+
+
 
     }
 }
