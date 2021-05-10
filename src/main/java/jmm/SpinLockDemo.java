@@ -1,4 +1,4 @@
-package jvm;
+package jmm;
 
 
 import java.util.concurrent.atomic.AtomicReference;

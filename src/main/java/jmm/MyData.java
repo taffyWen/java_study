@@ -13,7 +13,7 @@ public class MyData {
     }
 
     /**
-     * 不实用 synchronized 时，方法没有原子性，计算总金额小雨预期
+     * 不实用 synchronized 时，方法没有原子性，计算总金额小于预期
      */
     public synchronized void addPlusPlus(){
         number ++;

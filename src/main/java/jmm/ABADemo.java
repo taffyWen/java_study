@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicStampedReference;
 
 public class ABADemo {
 
-    //增加版本号
+    //解决ABA问题==》增加版本号
     static AtomicStampedReference<Integer> stampedReference = new AtomicStampedReference(121,1);
 
 
