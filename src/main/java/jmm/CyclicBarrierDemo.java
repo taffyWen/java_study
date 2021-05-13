@@ -9,7 +9,7 @@ import java.util.concurrent.CyclicBarrier;
  * 对比：CountDownLatch  一直减
  * 此处，一直加
  */
-public class CycleBarrierDemo {
+public class CyclicBarrierDemo {
 
     public static void main(String[] args) {
 
