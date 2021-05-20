@@ -35,7 +35,7 @@ public class ProductConsumer_BlockQueueDemo {
             }
         },"BB").start();
 
-        TimeUnit.SECONDS.sleep(5);
+        TimeUnit.SECONDS.sleep(3);
 
         System.out.println();
         System.out.println();
@@ -72,7 +72,7 @@ class MyResource{
                 System.out.println(Thread.currentThread().getName() + "\t 插入队列" + num + "失败");
             }
 
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.MILLISECONDS.sleep(500);
         }
 
         System.out.println("大老板叫停---------------");
@@ -85,6 +85,7 @@ class MyResource{
 
         // 叫停后，没有直接结束，还轮训了一次
         while (FLAG){
+            TimeUnit.MILLISECONDS.sleep(500);
             poll = blockingQueue.poll(2L,TimeUnit.SECONDS);
             System.out.println(Thread.currentThread().getName() + " \t 消费者队列消费" + poll + "成功");
         }
