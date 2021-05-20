@@ -4,6 +4,9 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * 多个条件
+ */
 public class ProductConsumer_TraditionalDemo2 {
 
     /**
