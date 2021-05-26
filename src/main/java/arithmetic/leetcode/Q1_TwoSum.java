@@ -1,4 +1,4 @@
-package arithmetic;
+package arithmetic.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +16,7 @@ import java.util.Map;
  * 解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。
  *
  */
-public class TwoSum {
+public class Q1_TwoSum {
 
 
     /**
