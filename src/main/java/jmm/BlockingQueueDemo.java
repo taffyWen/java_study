@@ -20,6 +20,7 @@ public class BlockingQueueDemo {
         System.out.println(blockingQueue.offer("a"));
         System.out.println(blockingQueue.offer("a"));
 
+
         // 产生一个，得等消费才能再生产
         BlockingQueue syno = new SynchronousQueue();
 

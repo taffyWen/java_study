@@ -14,6 +14,7 @@ public class CASDemo01 {
 
         //可以把一般类转为atomic类型
         AtomicReference<Person> atomicReference = new AtomicReference<>();
+        atomicReference.get();
 
 
 

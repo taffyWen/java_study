@@ -57,6 +57,11 @@ public class MyCache2 {
             int count = i;
             new Thread(()->{
                 myCache2.put(count,count);
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             },String.valueOf(count)).start();
         }
 

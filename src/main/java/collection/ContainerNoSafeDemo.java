@@ -1,9 +1,7 @@
 package collection;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 
@@ -21,8 +19,12 @@ public class ContainerNoSafeDemo {
          */
         List<String> list = new ArrayList<>();
 
+        List list1 = new Vector();
+
         // 转为线程安全
         List<String> strings = Collections.synchronizedList(new ArrayList<>());
+
+        ConcurrentHashMap map = new ConcurrentHashMap();
 
 
         List<String> synchronizedList = new CopyOnWriteArrayList<>();
